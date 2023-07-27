@@ -1,1 +1,1 @@
-npm install --global yarn
+curl -fsSL https://fnm.vercel.app/install | bash

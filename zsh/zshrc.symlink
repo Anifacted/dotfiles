@@ -41,7 +41,7 @@ done
 unset config_files
 
 # z command
-. "/usr/local/etc/profile.d/z.sh"
+source /opt/homebrew/etc/profile.d/z.sh
 
 # Apply Oh My ZSH (which was git-pulled during installation):
 export ZSH=$HOME/.oh-my-zsh
@@ -49,9 +49,11 @@ ZSH_THEME="robbyrussell"
 plugins=(git git-open)
 source $ZSH/oh-my-zsh.sh
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
 export PATH="$PATH:/usr/local/opt/python@3.9/libexec/bin"
 
 export NPM_TOKEN=$(security find-generic-password -s 'NPM Auth Token (Equilibrate)' -w)
+
+export PATH="/opt/homebrew/bin:$PATH"
+# fnm
+export PATH="/Users/marchoegh/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
