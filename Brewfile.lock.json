@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "f16a656fba173c711376ea45253341ffa0e44534"
+        "revision": "76378025fc8477a516a965cb78fe9c4f6d830738"
       }
     },
     "brew": {
@@ -570,7 +570,7 @@
         }
       },
       "firefox": {
-        "version": "115.0.2",
+        "version": "115.0.3",
         "options": {
           "full_name": "firefox",
           "args": {
@@ -633,7 +633,7 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.80.1",
+        "version": "1.80.2",
         "options": {
           "full_name": "visual-studio-code",
           "args": {
@@ -681,6 +681,24 @@
         "version": "1.1.2",
         "options": {
           "full_name": "sequel-pro",
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
+      },
+      "adobe-creative-cloud": {
+        "version": "5.11.0.522.1",
+        "options": {
+          "full_name": "adobe-creative-cloud",
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
+      },
+      "docker": {
+        "version": "4.21.1,114176",
+        "options": {
+          "full_name": "docker",
           "args": {
             "appdir": "/Applications"
           }
