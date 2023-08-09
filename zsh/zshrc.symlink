@@ -60,3 +60,11 @@ eval "`fnm env`"
 # fnm
 export PATH="/Users/marchoegh/Library/Application Support/fnm:$PATH"
 eval "`fnm env`"
+
+# fnm
+export PATH="/Users/marchoegh/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
+
+# fnm
+export PATH="/Users/marchoegh/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
