@@ -31,6 +31,6 @@ branch () {
   if [ -z "$1" ]; then
     echo "\033[0;31mPlease specificy branch name"
   else
-    git co -b "Anifacted/$1"
+    git co -b "mhoegh/$1"
   fi
 }
