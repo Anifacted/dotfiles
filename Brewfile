@@ -13,6 +13,7 @@ brew 'z'
 brew 'fnm'
 brew 'ctop'
 brew 'difftastic'
+brew 'glow'
 
 cask 'visual-studio-code'
 cask 'firefox'
