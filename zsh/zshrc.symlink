@@ -56,15 +56,3 @@ export PATH="$PATH:/usr/local/opt/python@3.9/libexec/bin"
 # fnm
 export PATH="/Users/marchoegh/Library/Application Support/fnm:$PATH"
 eval "`fnm env`"
-
-# fnm
-export PATH="/Users/marchoegh/Library/Application Support/fnm:$PATH"
-eval "`fnm env`"
-
-# fnm
-export PATH="/Users/marchoegh/Library/Application Support/fnm:$PATH"
-eval "`fnm env`"
-
-# fnm
-export PATH="/Users/marchoegh/Library/Application Support/fnm:$PATH"
-eval "`fnm env`"
