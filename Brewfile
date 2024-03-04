@@ -14,7 +14,7 @@ brew 'fnm'
 brew 'ctop'
 brew 'difftastic'
 brew 'glow'
-brew 'maccy'
+brew 'ffmpeg'
 
 cask 'visual-studio-code'
 cask 'firefox'
