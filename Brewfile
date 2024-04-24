@@ -15,6 +15,7 @@ brew 'ctop'
 brew 'difftastic'
 brew 'glow'
 brew 'ffmpeg'
+brew 'cloc'
 
 cask 'visual-studio-code'
 cask 'firefox'
