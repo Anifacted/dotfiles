@@ -16,6 +16,8 @@ brew 'difftastic'
 brew 'glow'
 brew 'ffmpeg'
 brew 'cloc'
+brew 'ripgrep'
+brew 'git-filter-repo'
 
 cask 'visual-studio-code'
 cask 'firefox'
