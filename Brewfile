@@ -18,6 +18,8 @@ brew 'ffmpeg'
 brew 'cloc'
 brew 'ripgrep'
 brew 'git-filter-repo'
+brew 'gitleaks'
+brew 'gh'
 
 cask 'visual-studio-code'
 cask 'firefox'
