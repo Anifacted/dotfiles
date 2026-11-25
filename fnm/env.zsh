@@ -1,3 +1,4 @@
-eval "$(fnm env --use-on-cd)"
-
-export PATH="./node_modules/.bin:$PATH"
+if (( $+commands[fnm] ))
+then
+  eval "$(fnm env --use-on-cd --shell zsh)"
+fi

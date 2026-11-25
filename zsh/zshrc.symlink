@@ -1,12 +1,8 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
-# your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
-
-# Stash your environment variables in ~/.localrc. This means they'll stay out
-# of your main dotfiles repository (which may be public, like this one), but
-# you'll have access to them in your scripts.
+# Machine-local environment variables and secrets (e.g. NPM_TOKEN) go in
+# ~/.localrc. It is never committed, because this repository is public.
 if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
@@ -41,7 +37,7 @@ done
 unset config_files
 
 # z command
-source /opt/homebrew/etc/profile.d/z.sh
+[[ -f /opt/homebrew/etc/profile.d/z.sh ]] && source /opt/homebrew/etc/profile.d/z.sh
 
 # Apply Oh My ZSH (which was git-pulled during installation):
 export ZSH=$HOME/.oh-my-zsh
@@ -49,10 +45,22 @@ ZSH_THEME="robbyrussell"
 plugins=(git git-open)
 source $ZSH/oh-my-zsh.sh
 
-export PATH="$PATH:/usr/local/opt/python@3.9/libexec/bin"
+# kubectl
+export KUBE_EDITOR='code --wait'
 
-# export NPM_TOKEN=$(security find-generic-password -s 'NPM Auth Token (Equilibrate)' -w)
+# pyenv
+if (( $+commands[pyenv] ))
+then
+  export PYENV_ROOT="$HOME/.pyenv"
+  eval "$(pyenv init -)"
+fi
 
-# fnm
-export PATH="/Users/marchoegh/Library/Application Support/fnm:$PATH"
-eval "`fnm env`"
+# gcloud (to enable logging)
+if [[ -x $HOME/.gcloud-venv/bin/python ]]
+then
+  export CLOUDSDK_PYTHON_SITEPACKAGES=1
+  export CLOUDSDK_PYTHON=$HOME/.gcloud-venv/bin/python
+fi
+
+# Claude Code
+export PATH="$HOME/.local/bin:$PATH"

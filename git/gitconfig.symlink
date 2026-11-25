@@ -1,8 +1,6 @@
 # Local/private config goes in the include
 [include]
         path = ~/.gitconfig.local
-[hub]
-        protocol = https
 [user]
         name = Marc Høegh
         email = mhoegh90@gmail.com
@@ -10,12 +8,9 @@
         user = Anifacted
 [alias]
         co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
         c = commit
         b = branch
         s = status
-        g = graph
         l = log
         g = log --graph
         d = diff
@@ -26,7 +21,7 @@
         o = open
         pushf = push --force-with-lease
         unstage = reset HEAD --
-        wip = add . && git commit -nam \"WIP\"
+        wip = !git add . && git commit -nam \"WIP\"
         back = reset HEAD~1
         pullm = pull --rebase origin main
 [color]
@@ -50,7 +45,5 @@
         default = current
 [diff]
         tool = difftastic
-[difftool]
-        prompt = false
 [difftool "difftastic"]
         cmd = difft "$LOCAL" "$REMOTE"
