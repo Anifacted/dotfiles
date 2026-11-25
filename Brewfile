@@ -21,6 +21,7 @@ brew 'gh'
 # Apps
 cask 'warp'
 cask 't3-code'
+cask 'wispr-flow'
 cask 'visual-studio-code'
 cask 'google-chrome'
 cask 'docker-desktop'
